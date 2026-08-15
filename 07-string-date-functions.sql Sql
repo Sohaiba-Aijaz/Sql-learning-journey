@@ -1,0 +1,13 @@
+-- String Functions
+SELECT name, LENGTH(name) AS len_name FROM users;
+
+SELECT name, LOWER(name) AS lower_name FROM users;
+
+SELECT LOWER(name) AS lower_name, CONCAT(LOWER(name), id) AS username FROM users;
+
+-- Date Functions
+SELECT name, YEAR(date_of_birth) AS yob FROM users;
+
+SELECT name, MONTH(date_of_birth) AS mob FROM users;
+
+SELECT NOW() AS current_datetime;
